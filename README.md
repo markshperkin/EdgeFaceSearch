@@ -43,29 +43,34 @@ prediction task.
 git clone https://github.com/markshperkin/EdgeFaceSearch
 cd EdgeFaceSearch
 ```
-
-### *OPTIONAL* install and use Cuda for Nvidia GPU
-
-
-
-
-### Enter the functions directory
+### *OPTIONAL* install and use CUDA for Nvidia GPU
+### Start the Search:  
+*line 58 in secondSearch.py*: Modify the search space based on your requirement.  
+*line 87 in secondSearch.py*: Modify the epoch number based on your requirement.
+Note: Search may take a few hours depending on the GPU used, the size of the search space, and the number of epochs.
 ```bash
-cd scripts
+python .\secondSearch.py
 ```
-
-### Start training
+### sort the results based on the selected fitness function:
 ```bash
-python .\train.py
+python .\results.py
 ```
-
-### Start testing
+### plot the results:
 ```bash
-python .\test.py
+python .\plot.py
+```
+### convert the trained model to .onnx:
+```bash
+python .\ONNX.py
+```
+### Train the optimal model:
+Note: you need to implement the optimal model in lines 10-26 
+```bash
+python .\trainopt.pt
 ```
 ---
 ## Class Project
 
-This project was developed as part of the Edge and Neuromorphic Computing class under the instruction of [Professor Ramtin Zand](https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/zand.php) and Teacher assistant [Peyton Chandarana](https://www.peytonsc.com/) at the University of South Carolina.
+This project was developed as part of the Edge and Neuromorphic Computing class under the instruction of [Professor Ramtin Zand](https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/zand.php) and Teaching Assistants [Peyton Chandarana](https://www.peytonsc.com/) and [Mohammadreza Mohammadi](https://www.linkedin.com/in/mohammadreza-mohammadi-544837199/) with the caloboration of the [INTELLIGENT CIRCUITS, ARCHITECTURES, AND SYSTEMS LAB](https://www.icaslab.com/home) at the University of South Carolina.
 
 
