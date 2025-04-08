@@ -1,5 +1,5 @@
 
-# Neural Architecture and Hyperparameter Search for Faca Bounding Box Prediction on Edge
+# Neural Architecture and Hyperparameter Search for Face Bounding Box Prediction on Edge
 
 ## Overview
 In this project, the goal was to optimize a neural network architecture for face bounding box
@@ -23,7 +23,7 @@ dimensionality by half
 The search procedure was structured in three distinct stages.  
 ➢ In the first stage, each combination of architecture and learning rate was trained and
 evaluated for 10 epochs, after which I selected the top 8 architectures based on their
-validation loss and inference latency. (There where 84 different configurations, and I was
+validation loss and inference latency. (There were 84 different configurations, and I was
 not able to plot the results effectively)  
 ➢ In the second stage, these 8 selected architectures were further trained for 30 epochs
 using their optimal learning rates identified from the initial stage. This stage narrowed
@@ -46,7 +46,8 @@ cd EdgeFaceSearch
 ### *OPTIONAL* install and use CUDA for Nvidia GPU
 ### Start the Search:  
 *line 58 in secondSearch.py*: Modify the search space based on your requirement.  
-*line 87 in secondSearch.py*: Modify the epoch number based on your requirement.  
+*line 87 in secondSearch.py*: Modify the epoch number based on your requirement.   
+*line 175 in secondSearch.py*: Modify the fitness function based on your requirement.
 Note: Search may take a few hours depending on the GPU used, the size of the search space, and the number of epochs.
 ```bash
 python .\secondSearch.py
