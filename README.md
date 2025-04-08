@@ -28,14 +28,14 @@ not able to plot the results effectively)
 ➢ In the second stage, these 8 selected architectures were further trained for 30 epochs
 using their optimal learning rates identified from the initial stage. This stage narrowed
 the selection down to the two best-performing architectures
-[Validation Loss Graph](second search val over epoch.png)
-[Latency Graph](second search latency over epoch.png)
+![Validation Loss Graph](report/second search val over epoch.png)
+![Latency Graph](report/second search latency over epoch.png)
 
 Finally, the third stage involved extensive training of these two architectures over 60 epochs.
 This allowed identification of the optimal architecture and learning rate for the bounding box
 prediction task. 
-[Validation Loss Graph](final search val over epoch.png)
-[Latency Graph](final search latency over epoch.png)
+![Validation Loss Graph](final search val over epoch.png)
+![Latency Graph](final search latency over epoch.png)
 
 ## how to run:
 ### Clone The Repo:
