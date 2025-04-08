@@ -6,6 +6,7 @@ import torch.optim as optim
 import torchvision.models as models
 from dataloader import get_dataloaders, load_annotations
 
+
 class RegressionHead(nn.Module):
     def __init__(self, in_features):
         super(RegressionHead, self).__init__()
@@ -124,7 +125,6 @@ def validate_model(model, val_loader):
             
             loss = torch.mean(torch.stack(bbox_losses))
             total_loss += loss.item()
-    
     avg_latency = sum(latency_list) / len(latency_list)
     avg_loss = total_loss / len(val_loader)
     return avg_loss, avg_latency
