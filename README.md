@@ -46,7 +46,7 @@ cd EdgeFaceSearch
 ### *OPTIONAL* install and use CUDA for Nvidia GPU
 ### Start the Search:  
 *line 58 in secondSearch.py*: Modify the search space based on your requirement.  
-*line 87 in secondSearch.py*: Modify the epoch number based on your requirement.
+*line 87 in secondSearch.py*: Modify the epoch number based on your requirement.  
 Note: Search may take a few hours depending on the GPU used, the size of the search space, and the number of epochs.
 ```bash
 python .\secondSearch.py
