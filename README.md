@@ -13,18 +13,18 @@ on the NVIDIA Jetson Nano to accurately reflect performance in a realistic deplo
 ---
 ## Solution
 In order to identify the optimal neural network architecture and corresponding
-hyperparameters, I conducted a structured neural architecture and hyperparameter search.
-• The neural architecture search space included 21 different base CNN feature extractors.
-• The hyperparameter research considered learning rates ranging from 1e-2 to 1e-5.
-The network architecture employed a regression head consisting of two layers:
+hyperparameters, I conducted a structured neural architecture and hyperparameter search.  
+• The neural architecture search space included 21 different base CNN feature extractors.  
+• The hyperparameter research considered learning rates ranging from 1e-2 to 1e-5.  
+The network architecture employed a regression head consisting of two layers:  
 • The input layer received neurons from the selected base architecture and reduced the
-dimensionality by half
-• The output layer produced four values representing bounding box coordinates.
-The search procedure was structured in three distinct stages.
+dimensionality by half  
+• The output layer produced four values representing bounding box coordinates.  
+The search procedure was structured in three distinct stages.  
 ➢ In the first stage, each combination of architecture and learning rate was trained and
 evaluated for 10 epochs, after which I selected the top 8 architectures based on their
 validation loss and inference latency. (There where 84 different configurations, and I was
-not able to plot the results effectively)
+not able to plot the results effectively)  
 ➢ In the second stage, these 8 selected architectures were further trained for 30 epochs
 using their optimal learning rates identified from the initial stage. This stage narrowed
 the selection down to the two best-performing architectures
