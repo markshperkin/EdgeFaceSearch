@@ -36,7 +36,10 @@ This allowed identification of the optimal architecture and learning rate for th
 prediction task. 
 ![Validation Loss Graph](report/final_search_val_over_epoch.png)
 ![Latency Graph](report/final_search_latency_over_epoch.png)
-
+The search concluded that the ResNet18 architecture with a learning rate of 0.01 was the optimal
+architecture for this problem, achieving an inference latency of 0.013 seconds and an IoU
+accuracy of 40%.
+---
 ## how to run:
 ### Clone The Repo:
 ```bash
