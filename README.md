@@ -1,6 +1,6 @@
 
 # Neural Architecture and Hyperparameter Search for Face Bounding Box Prediction on Edge
-## Won Second Place in Edge and Neuromorphic Computing class
+## Won Second Place in Edge and Neuromorphic Computing class, assessed with latency while achieving minimum accuracy.
 ## Overview
 In this project, the goal was to optimize a neural network architecture for face bounding box
 prediction using a given facial image dataset. The primary objective was to design a lightweight
