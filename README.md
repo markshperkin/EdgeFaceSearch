@@ -5,8 +5,8 @@
 In this project, the goal was to optimize a neural network architecture for face bounding box
 prediction using a given facial image dataset. The primary objective was to design a lightweight
 and efficient model capable of performing inference on resource-constrained hardware, NVIDIA
-Jetson Nano. Additionally, a competition through a Kaggle evaluated the architecture based on
-their prediction accuracy and inference latency. Accuracy was quantified using Intersection over
+Jetson Nano. Additionally, a competition on Kaggle evaluated the architecture based on
+its prediction accuracy and inference latency. Accuracy was quantified using Intersection over
 Union (IoU), a metric that assesses the degree of overlap between the model's predicted
 bounding boxes and the ground-truth coordinates. Latency evaluation was performed directly
 on the NVIDIA Jetson Nano to accurately reflect performance in a realistic deployment scenario
